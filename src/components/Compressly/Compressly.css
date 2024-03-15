@@ -1,0 +1,29 @@
+.compressly-container {
+    background-color: #FFCAD4;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.compressly-box {
+    background-color: #fff;
+    width: 40vw;
+    min-width: 400px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+.compressly-inputs {
+    display: flex;
+    gap: 16px;
+}
+.select-domain,
+.alias-input,
+.url-input,
+.trim-btn{
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+}

@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+}
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)), url('/src//assets//images/background.png');
+    background-position: center;
+    background-size: cover;
+}
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    background: #fff;
+    text-align: center;
+    border-radius: 18px;
+}
+.error-message {
+    color: #ff0000;
+}
+.form-box h1 {
+    font-size: 30px;
+    color: #3c00a0;
+}
+.underline {
+    width: 61px;
+    height: 6px;
+    background: #3c00a0;
+    border-radius: 9px;
+}
+.form-box h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+}
+.login-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+.form-group label {
+    color: #555;
+}
+input[type="email"],
+input[type="password"] {
+    width: 360px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.form-link {
+    text-align: center;
+    margin-top: 10px;
+}
+.login-btn {
+    width: 360px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.login-btn google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #3c00a0; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login-btn email-btn {
+    background: #3c00a0;
+}
+.google-icon {
+    width: 20px; 
+    height: auto;
+    margin-right: 10px; 
+}
+/* button:hover {
+    background-color: #3c00a0;
+} */
+
+
+/* Responsive styles for smaller screens
+@media (max-width: 768px) {
+    .form-box {
+        width: 80%;
+        padding: 20px;
+        gap: 20px;
+    }
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+    }
+    .login-btn {
+        width: 100%;
+    }
+} */
+
+
+/* Responsive styles for larger screens */
+/* @media (min-width: 1200px) {
+    .login-container {
+        padding: 50px;
+    }
+    .form-box {
+        width: 70%;
+    }
+    input[type="email"],
+    input[type="password"] {
+        width: 400px;
+    }
+    .login-btn {
+        width: 400px;
+    }
+} */

@@ -2,13 +2,13 @@ import React, { useEffect, useRef, useState} from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
-interface NavProps {
-  scrollToView: (e: React.MouseEvent<HTMLLIElement>, href: string) => void;
-  onSidebarOpen: () => void;
-  sidebarOpen: boolean;
-}
+// interface NavProps {
+//   scrollToView: (e: React.MouseEvent<HTMLLIElement>, href: string) => void;
+//   onSidebarOpen: () => void;
+//   sidebarOpen: boolean;
+// }
 // eslint-disable-next-line no-empty-pattern
-const Nav: React.FC<NavProps> = ({  }) => {
+const Nav: React.FC = ({}) => {
   const nav = useRef<HTMLDivElement>(null);
   const [, setMenuOpen] = useState(false);
     

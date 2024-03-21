@@ -1,29 +1,72 @@
 .compressly-container {
-    background-color: #FFCAD4;
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    border-radius: 2px;
+    background-image: url("/src/assets/images/url-background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.compressly-form {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border-radius: 12px;
+    color: #0065fe;
+    background: #fff;
+    border: 1px solid #3284ff;
+
 }
 .compressly-box {
-    background-color: #fff;
-    width: 40vw;
-    min-width: 400px;
+    width: 100%;
+    min-width: 300px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    gap: 20px;
+    gap: 12px;
+    background-color: #fff;
+}
+.individual-input {
+    width: initial;
 }
 .compressly-inputs {
     display: flex;
     gap: 16px;
+}
+.shortened,
+.qr-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+.qr-btns{
+    display: flex;
+    gap: 12px;
+}
+.qr-btn {
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #0065fe;
+    color: #fff;
 }
 .select-domain,
 .alias-input,
 .url-input,
 .trim-btn{
     width: 100%;
-    padding: 16px;
+    padding: 8px;
     border-radius: 12px;
+}
+.trim-btn {
+    background-color: #0065fe;
+    color: #fff;
+}
+.compressly-footer {
+    text-align: center;
 }

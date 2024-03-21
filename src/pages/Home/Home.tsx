@@ -1,7 +1,12 @@
 import Nav from '../../components/Nav/Nav';
+import Features from "../../components/Features/Features";
+import Pricing from "../../components/Pricing/Pricing";
+import Compressly from "../../components/Compressly/Compressly";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import './Home.css';
+import FAQs from '../../components/FAQs/FAQs';
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
     return (
@@ -42,9 +47,50 @@ const Home = () => {
                                 <span className='highlighted'> possibilities</span>
                                 .
                             </h1>
+                            <div className='data-container'>
+                                <div className='data-main'>
+                                    <h4>3M</h4>
+                                    <p>Active users</p>
+                                </div>
+                                <div className='data-main'>
+                                    <h4>60M</h4>
+                                    <p>
+                                        Links & QR
+                                        <br />
+                                        codes created
+                                    </p>
+                                </div>
+                                <div className='data-main'>
+                                    <h4>1B</h4>
+                                    <p>
+                                        Cicked & Scanned
+                                        <br />
+                                        connections
+                                    </p>
+                                </div>
+                                <div className='data-main'>
+                                    <h4>300k</h4>
+                                    <p>App Integrations</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id='features'>
+                <Features />
+            </div>
+            <div id="pricing">
+                <Pricing />
+            </div>
+            <div id="compressly">
+                <Compressly />
+            </div>
+            <div id='faqs'>
+                <FAQs />
+            </div>
+            <div id='footer'>
+                <Footer />
             </div>
         </>
     );

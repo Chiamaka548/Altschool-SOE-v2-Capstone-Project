@@ -1,33 +1,41 @@
-import React, { useState } from "react";
-import axios from "axios";
-import QRCode from 'qrcode.react';
-import "./Compressly.css";
+import React, { useRef } from 'react';
+import {QRCodeSVG} from 'qrcode.react';
 
-const QRCodeGen: React.FC = () => {
-    const [url, setUrl] = useState<string>('');
-    const [shortenedUrl, setShortenedUrl] = useState('');
+interface QRCodeProps {
+    url: string;
+}
 
-    const generateQRCode = async () => {
-        try {
-            const response = await axios.get(`https://tinyurl.com/api-create.php?url=${url}`);
-            setShortenedUrl(response.data);
-        } catch (error) {
-            console.error('Error shortening URL:', error);
+const QRCodeGen: React.FC<QRCodeProps> = ({ url }) => {
+    const codeRef = useRef<HTMLDivElement>(null);
+
+    const qRCodeDownload = () => {
+        if (codeRef.current) {
+            const canvas = codeRef.current.querySelector("canvas");
+            if (canvas) {
+                const pngUrl = canvas
+                    .toDataURL("image/png")
+                    .replace("image/png", "image/octet-stream");
+
+                const linkDownload = document.createElement("a");
+                linkDownload.href = pngUrl;
+                linkDownload.download = "qrcode.png";
+                document.body.appendChild(linkDownload);
+                linkDownload.click();
+                document.body.removeChild(linkDownload);
+            }
         }
     };
 
     return (
-        <div>
-            <input type="text" value={url} onChange={(e) => setUrl(e.target.value)} placeholder="Enter URL"/>
-            <button onClick={generateQRCode}>Generate QR Code</button>
-            {shortenedUrl && (
-                <div>
-                    <p>Shortened URL: {shortenedUrl}</p>
-                    <QRCode value={shortenedUrl} />
-                </div>
-            )}
+        <div className="">
+            <div ref={codeRef}>
+            <QRCodeSVG value="={url}" />
+            </div>
+
+            <button onClick={() => window.open(url, "_blank")} className="">
+            <a onClick={qRCodeDownload}>Download QR Code</a>
+            </button>
         </div>
     );
 };
-            
 export default QRCodeGen;

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState} from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
@@ -10,6 +10,15 @@ interface NavProps {
 // eslint-disable-next-line no-empty-pattern
 const Nav: React.FC<NavProps> = ({  }) => {
   const nav = useRef<HTMLDivElement>(null);
+  const [, setMenuOpen] = useState(false);
+    
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setMenuOpen(false);
+    }
+  };
 
   useEffect(() => {
     const isSticky = () => {
@@ -38,20 +47,23 @@ const Nav: React.FC<NavProps> = ({  }) => {
 
       <ul className="navbar-links">
         <li>
-          <Link to ='/MyURLs'>My URLs</Link>
+          <Link to='#myurls' onClick={() => scrollToSection ("myurls")}>My URLs</Link>
         </li>
         <li>
-          <Link to='/features'>Features</Link>
+          <Link to='#features' onClick={() => scrollToSection ("features")}>Features</Link>
         </li>
         <li>
-          <Link to='/pricing'>Pricing</Link>
+          <Link to='#pricing' onClick={() => scrollToSection ("pricing")}>Pricing</Link>
         </li>
         <li>
-          <Link to='/analytics'>Analytics</Link>
+          <Link to='#analytics' onClick={() => scrollToSection ("analytics")}>Analytics</Link>
         </li>
         <li>
-          <Link to='/faqs'>FAQs</Link>
+          <Link to='#faqs' onClick={() => scrollToSection ("faqs")}>FAQs</Link>
         </li>
+        {/* <li>
+          <Link to='#compressly' onClick={() => scrollToSection ("compressly")}>Trim URL</Link>
+        </li> */}
       </ul>
 
       <div className="navbar-buttons">

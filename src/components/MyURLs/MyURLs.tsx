@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MyURLs = () => {
+const MyURLs: React.FC = () => {
   return (
     <div>
       

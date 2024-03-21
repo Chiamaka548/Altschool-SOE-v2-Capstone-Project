@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 2px;
-    background-image: url("/src/assets/images/url-background.svg");
+    background-image: url("/static/images/url-background.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

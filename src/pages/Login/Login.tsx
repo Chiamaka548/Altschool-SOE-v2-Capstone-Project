@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { auth } from '../../utils/Config/config';
 import { GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword } from 'firebase/auth';
-import googleLogo from '../../assets/images/googleicon1.png';
+import googleLogo from '/static/images/googleicon1.png';
 import './Login.css';
 
 const Login: React.FC = () => {

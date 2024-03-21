@@ -42,7 +42,7 @@ const Nav: React.FC<NavProps> = ({  }) => {
   return (
     <nav className='navbar'>
       <div className='logo-container'>
-      <img src='/src/assets/images/Logo.svg' alt='navbar-logo'/>
+      <img src="/static/images/Logo.svg" alt='navbar-logo'/>
       </div>
 
       <ul className="navbar-links">
@@ -79,55 +79,3 @@ const Nav: React.FC<NavProps> = ({  }) => {
 }
 
 export default Nav;
-
-
-// import React, { useState } from 'react'
-// import { Link } from 'react-router-dom'
-// import Logo from '../../assets/images/logo.png'
-// import './Nav.css'
-
-// const Nav: React.FC = () => {
-//   const [menuOpen, setMenuOpen] = useState(false);
-
-//   const toggleMenu = () => {
-//     setMenuOpen(!menuOpen);
-//   };
-
-//   return (
-//     <nav className="navbar">
-//       <div className="navbar-container">
-//       <Link to="/" className="logo-container">
-//       <img src={Logo} width="400" height="400" alt="Logo" className="logo" />
-//         </Link>
-//         <button className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-//             <span className="bar"></span>
-//             <span className="bar"></span>
-//             <span className="bar"></span>
-//         </button>
-//       </div>
-//       <div className={`navbar-menu ${menuOpen ? 'open' : ''}`}>
-//       <ul className="navbar-links">
-//         <li>
-//         <Link to="/features">Features</Link>
-//         </li>
-//         <li>
-//         <Link to="/Pricing">Pricing</Link>
-//         </li>
-//         <li>
-//         <Link to="/FAQs">FAQs</Link>
-//         </li>
-//         </ul>
-//         <div className="navbar-buttons">
-//         <Link to="/signup" className="btn btn-signup">
-//           Sign Up
-//         </Link>
-//         <Link to="/login" className="btn btn-login">
-//           Login
-//         </Link>
-//         </div>
-//       </div>
-//       </nav>
-//   );
-// };
-
-// export default Nav;

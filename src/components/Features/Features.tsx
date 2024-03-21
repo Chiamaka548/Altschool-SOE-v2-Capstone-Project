@@ -15,7 +15,7 @@ const Features = () => {
                 </div>
                 <div className='feature-list'>
                     <div className='feature top'>
-                        <img src='/src/assets/images/link.svg'/>
+                        <img src='/static/images/link.svg'/>
                         <div className="feature-text">
                             <h3 className='feature-header'>URL Shortening</h3>
                             <p className='feature-description'>
@@ -24,7 +24,7 @@ const Features = () => {
                         </div>
                     </div>
                     <div className='feature top'>
-                        <img src='/src/assets/images/customurls.svg' />
+                        <img src='/static/images/customurls.svg' />
                         <div className="feature-text">
                             <h3 className='feature-header'>Custom URLs</h3>
                             <p className='feature-description'>
@@ -33,7 +33,7 @@ const Features = () => {
                         </div>
                     </div>
                     <div className='feature'>
-                        <img src='/src/assets/images/QRcodes.svg' />
+                        <img src='/static/images/QRcodes.svg' />
                         <div className="feature-text">
                             <h3 className='feature-header'>QR Codes</h3>
                             <p className='feature-description'>
@@ -42,7 +42,7 @@ const Features = () => {
                         </div>
                     </div>
                     <div className='feature'>
-                        <img src='/src/assets/images/data-analytics.svg' />
+                        <img src='/static/images/data-analytics.svg' />
                         <div className="feature-text">
                             <h3 className='feature-header'>Data Analytics</h3>
                             <p className='feature-description'>

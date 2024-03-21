@@ -17,7 +17,7 @@ const Home = () => {
                         <span className='home-h2'>Optimize your online experience with our advanced </span>
                         <span className='special-text'>
                             <span className='highlighted'>URL Shortening</span>
-                            <img src="/src/assets/images/home-underline.svg" alt='' />
+                            <img src="/static/images/home-underline.svg" alt='' />
                         </span>
                         <span className='home-h2'> solution</span>
 
@@ -34,10 +34,10 @@ const Home = () => {
                         <button className='inverse-button'>Learn More</button>
                     </div>
                 </div>
-                <img src="/src/assets/images/hero-image.svg" className="hero-image" alt="hero-image" />
+                <img src="/static/images/hero-image.svg" className="hero-image" alt="hero-image" />
 
                 <div>
-                    <img src="/src/assets/images/eclipse.png" className='eclipse-img' alt='hero-image' />
+                    <img src="/static/images/eclipse.png" className='eclipse-img' alt='hero-image' />
                     <div className='onestop-container'>
                         <div className='onestop-main'>
                             <h1 className='onestop-text'>

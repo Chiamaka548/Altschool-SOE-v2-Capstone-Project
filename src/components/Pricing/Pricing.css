@@ -78,3 +78,18 @@
     margin-bottom: 100px;
     margin-left: -30px;
 }
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-cards .white-card, .pricing-cards .blue-card {
+        width: 100%;
+    }
+    .price-buttons {
+        margin-left: 0;
+    }
+}

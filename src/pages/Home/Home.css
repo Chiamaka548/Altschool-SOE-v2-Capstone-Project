@@ -108,3 +108,39 @@
     word-wrap: normal;
     text-align: left;
 }
+
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .home-main {
+        width: 70vw;
+    }
+    .home-h2,
+    .special-text {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .button-wrapper {
+        margin: 40px 0;
+    }
+    .hero-image {
+        margin-top: 70px;
+        margin-left: 0;
+    }
+    .onestop-main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .onestop-text {
+        min-width: 0;
+        text-align: left;
+    }
+    .data-container {
+        flex-direction: row;
+        gap: 72px;
+    }
+    .data-main > h4,
+    .data-main > p {
+        text-align: left;
+    }
+}

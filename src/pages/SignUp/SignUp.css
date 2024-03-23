@@ -101,8 +101,7 @@ input[type="confirmPassword"] {
 }
 
 
-/* Responsive styles for smaller screens */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .signup-box {
         width: 80%;
         padding: 20px;
@@ -115,10 +114,9 @@ input[type="confirmPassword"] {
     .signup-btn {
         width: 100%;
     }
-} */
+}
 
-/* Responsive styles for larger screens */
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .signup-container {
         padding: 50px;
     }
@@ -134,4 +132,4 @@ input[type="confirmPassword"] {
     .signup-btn {
         width: 400px;
     }
-} */
+}

@@ -53,3 +53,15 @@
 .feature-description {
     font-size: 16px;
 }
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .features-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 992px) {
+    .features-info {
+        flex-basis: 370px;
+    }
+}

@@ -70,3 +70,10 @@
 .compressly-footer {
     text-align: center;
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .compressly-form {
+        width: 80vw;
+    }
+}

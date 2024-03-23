@@ -49,3 +49,20 @@
     font-weight: 500;
     line-height: 24px;
 }
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .footer-info {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-stain {
+        margin-right: 150px;
+    }
+}
